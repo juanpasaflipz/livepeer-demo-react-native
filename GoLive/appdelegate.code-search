@@ -1,0 +1,45 @@
+# Query: appdelegate
+# ContextLines: 1
+
+i16 results - 4 files
+
+GoLive/ios/GoLive/AppDelegate.h:
+  3  
+  4: @interface AppDelegate : UIResponder <UIApplicationDelegate, RCTBridgeDelegate>
+  5  
+
+GoLive/ios/GoLive/AppDelegate.m:
+   1: #import "AppDelegate.h"
+   2  
+
+  25  
+  26: @implementation AppDelegate
+  27  
+
+GoLive/ios/GoLive/main.m:
+  2  
+  3: #import "AppDelegate.h"
+  4  
+
+  6    @autoreleasepool {
+  7:     return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+  8    }
+
+GoLive/ios/GoLive.xcodeproj/project.pbxproj:
+   11  		075E86F6807C4D8E8630AEF2 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF0CAEB5A3974F26B37DCAF4 /* Inter-ExtraBold.ttf */; };
+   12: 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+   13  		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+
+   43  		13B07F961A680F5B00A75B9A /* GoLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+   44: 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GoLive/AppDelegate.h; sourceTree = "<group>"; };
+   45: 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GoLive/AppDelegate.m; sourceTree = "<group>"; };
+   46  		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GoLive/Images.xcassets; sourceTree = "<group>"; };
+
+  106  			children = (
+  107: 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+  108: 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+  109  				13B07FB51A68108700A75B9A /* Images.xcassets */,
+
+  456  			files = (
+  457: 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+  458  				13B07FC11A68108700A75B9A /* main.m in Sources */,
